@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <h1>Форма обратной связи</h1>
+    <div class="container">
+      <form id="feedback-form" novalidate>
+        <label for="name">
+          Имя
+        </label>
+        <input type="text" id="name" name="name" required autocomplete="off">
+        <label for="email">
+          Email
+        </label>
+        <input type="email" id="email" name="email" required autocomplete="off">
+        <label for="phone">
+          Телефон
+        </label>
+        <input type="tel" id="phone" name="phone" autocomplete="off">
+        <label for="message">
+          Сообщение
+        </label>
+        <textarea id="message" name="message" required autocomplete="off"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+      <div id="modal" class="modal">
+        <p>Привет, не забудь отправить фидбэк разработчику!!! </p>
+        <button id="close-modal">Закрыть</button>
+      </div>
+      <button id="open-modal">Открыть модальное окно</button>
+    </div>
+  </main>
+</body>
+
+</html>
